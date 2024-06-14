@@ -4,4 +4,4 @@ node_modules
 db
 *.lock
 uploads
-*.Identifier
+**.Identifier
