@@ -1,0 +1,80 @@
+.image-form {
+  background-color: #a99985;
+  padding: 5% 5% 5% 5%;
+  border: none;
+  display: none;
+  width: 70vmin;
+  height: 70vmin;
+  margin: auto;
+  position: absolute;
+  animation-name: move-in-form;
+  animation-duration: 2s;
+}
+
+.display-add-image-form {
+  display: flex;
+  flex-direction: column;
+  left: 0;
+  right: 0;
+}
+
+.form-title {
+  font-size: 6vmin;
+  text-align: center;
+}
+
+.form-element {
+  width: 80%;
+  height: 15%;
+  align-self: center;
+  margin: auto;
+  font-size: 5vmin;
+}
+
+.btn {
+  background-color: #70798c;
+  border-width: 3px;
+}
+
+.btn:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.btn:active {
+  transform: translateY(2px);
+}
+
+.comment-form {
+  border: none;
+  display: none;
+  left: 0;
+  right: 0;
+  width: 45vmin;
+  height: 35vmin;
+  margin: auto;
+  animation-name: move-in-form;
+  animation-duration: 2s;
+}
+
+.comment-form-opened {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-element.comment-form-element {
+  font-size: 2vmin;
+}
+
+.form-title.comment-form-title {
+  font-size: 4vmin;
+}
+
+@keyframes move-in-form {
+  0% {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}

@@ -1,0 +1,146 @@
+<!doctype html>
+
+<html>
+  <head>
+    <title>Web Gallery</title>
+    <link href="./styles/cols.css" rel="stylesheet" />
+    <link href="./styles/main.css" rel="stylesheet" />
+    <link href="./styles/form.css" rel="stylesheet" />
+    <link href="./styles/post.css" rel="stylesheet" />
+    <link href="./styles/comments.css" rel="stylesheet" />
+    <link href="./styles/loading.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+  </head>
+
+  <body>
+    <div class="nav-bar">
+      <div class="col-9 col-sm-9">
+        <h1>Web Gallery</h1>
+      </div>
+      <div class="col-3 col-sm-3">
+        <img
+          class="upload-icon"
+          src="./media/upload-icon.png"
+          id="upload-btn"
+        />
+      </div>
+    </div>
+    <div class="loading-background hidden" id="loadingScreen">
+      <div class="loader"></div>
+    </div>
+
+    <form class="image-form" id="add-image-form" enctype="multipart/form-data">
+      <div class="form-title">Add an Image</div>
+      <input
+        type="text"
+        id="img-author"
+        class="form-element"
+        name="author"
+        placeholder="Author's name"
+        required
+      />
+      <input
+        type="text"
+        id="img-title"
+        class="form-element"
+        name="title"
+        placeholder="Image title"
+        required
+      />
+      <input
+        type="file"
+        name="picture"
+        id="img-file"
+        class="form-element"
+        accept="image/*"
+        required
+      />
+      <input
+        type="submit"
+        id="post-submit-btn"
+        class="form-element btn"
+        value="Add Image"
+      />
+    </form>
+
+    <div class="spacer"></div>
+
+    <div class="gallery-empty-msg" id="gallery-empty">
+      Gallery is currently empty.
+    </div>
+
+    <div class="outer-img" id="outer-img-display">
+      <div class="col-1 col-sm-1 back-post" id="back-post"></div>
+      <div class="col-auto col-sm-auto">
+        <div class="row">
+          <div class="post-title" id="image-title">Sample Image Title</div>
+          <div id="num-in-gallery">#1/5</div>
+        </div>
+        <img
+          class="inner-img"
+          src=""
+          alt="current image being displayed"
+          id="image-display"
+        />
+        <div class="row align-content-center post-controls">
+          <div class="col-auto col-sm-auto post-author" id="image-author">
+            <i>Posted by:</i> Username
+          </div>
+          <div
+            class="col-1 col-sm-2 comment-post-icon"
+            id="comment-post-btn"
+          ></div>
+          <div class="col-1 col-sm-2 delete-post-icon" id="delete-post"></div>
+        </div>
+      </div>
+      <div class="col-1 col-sm-1 next-post" id="next-post"></div>
+    </div>
+
+    <form class="comment-form" id="make-comment-form">
+      <div class="form-title comment-form-title">Make a Comment</div>
+      <input
+        type="text"
+        id="comment-author"
+        class="form-element comment-form-element"
+        name="author"
+        placeholder="Author's name"
+        required
+      />
+      <textarea
+        rows="5"
+        id="comment-content"
+        class="form-element comment-form-element"
+        name="content"
+        placeholder="Content"
+        required
+      ></textarea>
+      <button type="submit" class="form-element comment-form-element btn">
+        Comment
+      </button>
+    </form>
+
+    <div class="spacer"></div>
+
+    <div class="comment-sec-controls" id="comment-sec-controls">
+      <div class="col-4 col-sm-4 back-comment" id="back-comment-10">
+        <em>Back 10</em>
+      </div>
+      <div class="col-auto col-sm-auto"><b>Comment Section</b></div>
+      <div class="col-4 col-sm-4 next-comment" id="next-comment-10">
+        <em>Next 10</em>
+      </div>
+    </div>
+
+    <div class="spacer"></div>
+
+    <div class="comment-section" id="comments"></div>
+
+    <div class="spacer"></div>
+
+    <footer>
+      <a href="./credits.html">Credits</a>
+    </footer>
+    <script src="./js/index.js"></script>
+    <script src="./js/api-service.js"></script>
+  </body>
+</html>

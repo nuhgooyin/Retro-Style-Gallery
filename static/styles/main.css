@@ -1,0 +1,72 @@
+body {
+  background-color: #f5f1ed;
+  font-family: Verdana, sans-serif;
+}
+
+h1 {
+  margin-left: 5vmin;
+  font-size: 7vmin;
+}
+
+.nav-bar {
+  align-items: center;
+  display: flex;
+  height: 10vmin;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #dad2bc;
+}
+
+.image-display {
+  align-items: center;
+  display: flex;
+  height: 65px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.upload-icon {
+  width: 8vmin;
+  height: auto;
+  margin: 1em 5vmin;
+  padding-top: 1vmin;
+}
+
+.upload-icon:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.upload-icon:active {
+  transform: translateY(2px);
+}
+
+.upload-icon-opened {
+  width: 6vmin;
+  height: auto;
+  margin-left: 5.75vmin;
+  padding-top: 1vmin;
+}
+
+.spacer {
+  padding: 2%;
+  margin: auto;
+}
+
+.comment-spacer {
+  width: 65vw;
+  margin: 2% 0 2% 0;
+  border-color: black;
+  border: solid;
+  border-width: 0.01px;
+  align-self: center;
+}
+
+.gallery-empty-msg {
+  text-align: center;
+  font-size: 5vmin;
+}
+
+.hide-gallery-empty-msg {
+  display: none;
+}

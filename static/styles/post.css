@@ -1,0 +1,133 @@
+.inner-img {
+  max-width: 100%;
+  max-height: 100%;
+  display: flex;
+  margin: auto;
+  left: 0;
+  right: 0;
+}
+
+.outer-img {
+  display: none;
+  justify-content: space-between;
+  width: 100%;
+  margin: auto;
+}
+
+.display-outer-img {
+  display: flex;
+}
+
+.next-post {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 75%;
+  padding: 5%;
+  background-image: url("../media/forward-icon.png");
+  margin: auto;
+  left: 0;
+  right: 0;
+}
+
+.back-post {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 75%;
+  padding: 5%;
+  background-image: url("../media/back-icon.png");
+  margin: auto;
+  left: 0;
+  right: 0;
+}
+
+.next-post:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.next-post:active {
+  transform: translateY(2px);
+}
+
+.back-post:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.back-post:active {
+  transform: translateY(2px);
+}
+
+.post-title {
+  font-size: 6vmin;
+  margin: 1vmin 0 1vmin 1vmin;
+}
+
+.post-author {
+  font-size: 2vmin;
+  margin: 1vmin 0 1vmin 1vmin;
+}
+
+.delete-post-icon {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 45%;
+  width: 7vmin;
+  height: 7vmin;
+  background-image: url("../media/delete-icon.png");
+}
+
+.comment-post-icon {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 45%;
+  width: 7vmin;
+  height: 7vmin;
+  background-image: url("../media/chat-icon.png");
+}
+
+.delete-post-icon:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.delete-post-icon:active {
+  transform: translateY(2px);
+}
+
+.comment-post-icon:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.comment-post-icon:active {
+  transform: translateY(2px);
+}
+
+.post-controls {
+  justify-content: space-between;
+}
+
+@media (min-width: 577px) {
+  .outer-img {
+    width: 90%;
+  }
+}
+
+@media (min-width: 960px) {
+  .next-post {
+    background-size: 50%;
+  }
+  .back-post {
+    background-size: 50%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .next-post {
+    background-size: 40%;
+  }
+  .back-post {
+    background-size: 40%;
+  }
+}

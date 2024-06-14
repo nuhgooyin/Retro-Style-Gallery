@@ -1,0 +1,95 @@
+.comment-section {
+  display: none;
+}
+
+.display-comment-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.comment-sec-controls {
+  display: none;
+  justify-content: space-between;
+  margin: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 3.25vmin;
+  background-color: #dad2bc;
+}
+
+.display-comment-sec-controls {
+  display: flex;
+  flex-direction: row;
+}
+
+.comment-profile-pic {
+  width: 13vmin;
+  height: auto;
+}
+
+.comment-author {
+  font-size: 3vmin;
+  text-align: center;
+}
+
+.comment-date {
+  font-size: 2vmin;
+  margin-top: 1vmin;
+}
+
+.delete-icon {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 75%;
+  background-image: url("../media/delete-icon.png");
+}
+
+.upvote-icon {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 75%;
+  background-image: url("../media/heart-icon.png");
+}
+
+.comment-content {
+  width: 80%;
+  font-size: 3vmin;
+  margin: 7% 0 0 5%;
+}
+
+.delete-icon:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.delete-icon:active {
+  transform: translateY(2px);
+}
+
+.upvote-icon:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.upvote-icon:active {
+  transform: translateY(2px);
+}
+
+.next-comment:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.next-comment:active {
+  transform: translateY(2px);
+}
+
+.back-comment:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.back-comment:active {
+  transform: translateY(2px);
+}
