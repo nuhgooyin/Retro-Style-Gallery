@@ -1,4 +1,4 @@
-# Backend Web Gallery
+# Retro-style Web Gallery
 
 A single-page dynamic application with a mobile-first, responsive design, that allows users to post/delete images, make/delete comments, and browse other posted images. Created backend using Node.js, Express.js, Sequelize and SQLite for persistent storage of posts, images, and comments. 
 
